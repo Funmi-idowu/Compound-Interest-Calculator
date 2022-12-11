@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Interest Computer</title>
+    <link rel="stylesheet" href="interest.css" />
+    <script src="interest.js" defer></script>
+  </head>
+  <body>
+    <section id="main">
+      <h1>
+        <div>Compound Interest Calculator</div>
+      </h1>
+      <nav>
+        <ul>
+          <li id="formula">Home</li>
+          <li id="calculator">Calculator</li>
+        </ul>
+      </nav>
+      <section>
+        <p id="description">
+          <img
+            src="homepage.png"
+            width="100%"
+            alt="Compound interest formula"
+          />
+        </p>
+        <form>
+          <p>
+            Initial balance <i>$<input id="principal" /></i>
+          </p>
+          <p>
+            Interest rate <i><input type="range" min="0" max="50" step="0.0125" id="interest" />
+            (<span id="apr"></span>%)</i>
+          </p>
+          <p>Compound frequency <input id="frequency" /></p>
+          <p>Investment time span <input id="totalYears" /></p>
+          <p>Your estimated total is $<span id="amount" /></p>
+          <p id="money">
+            <img src="money.png" width="20%" alt="Bag of money" />
+          </p>
+        </form>
+        </p>
+      </section>
+      <footer><a href="https://codesandbox.io/s/compound-interest-calculator-bnyk4o?file=/index.html"> View the source code</a>(c) 2022</footer>
+    </section>
+  </body>
+</html>

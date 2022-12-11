@@ -1,0 +1,83 @@
+body {
+  height: 100vh;
+  background: linen;
+  margin: 0;
+}
+
+@media screen and (min-width: 480px) {
+  section#main {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto auto 1.5rem;
+    grid-template-columns: 120px auto;
+  }
+  li {
+    display: block;
+  }
+}
+
+nav {
+  background-color: teal;
+}
+
+input:hover {
+  border: 0.5px solid black;
+  width: 150px;
+  margin: auto;
+}
+
+form {
+  text-align: center;
+  font-family: cochin;
+  font-size: 150%;
+  display: none;
+}
+
+ul {
+  list-style: none;
+  margin-left: -1.5em;
+  text-shadow: 1.5px 1px 0.5px white;
+  font-family: cochin bold;
+  font-size: 120%;
+}
+
+li {
+  display: inline;
+}
+
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 125%;
+  transition: font-size 1s;
+  text-shadow: 3px 2px 2px white;
+}
+
+#description {
+  display: block;
+}
+
+#money {
+  transform: skew(10deg);
+}
+
+h1 {
+  margin: 0;
+  padding: 12px;
+  text-shadow: 3px 2px 2px teal;
+  background-image: linear-gradient(teal, lightblue);
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 250%;
+  font-family: cochin;
+  color: white;
+}
+
+footer {
+  background-image: linear-gradient(lightblue, teal);
+  grid-column: span 2;
+  text-align: center;
+  color: white;
+}
